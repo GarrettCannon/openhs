@@ -1,0 +1,36 @@
+library:
+  source-dirs: src
+tests:
+  openhs-test:
+    source-dirs: test
+    main: Spec.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - openhs
+copyright: 2019 Author name here
+maintainer: example@example.com
+dependencies:
+- GLUT
+- base >= 4.7 && < 5
+name: openhs
+version: 0.1.0.0
+extra-source-files:
+- README.md
+- ChangeLog.md
+author: Author name here
+github: githubuser/openhs
+license: BSD3
+executables:
+  openhs-exe:
+    source-dirs: app
+    main: Main.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - openhs
+description: Please see the README on GitHub at <https://github.com/githubuser/openhs#readme>
