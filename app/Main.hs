@@ -1,20 +1,29 @@
+{-# LANGUAGE OverloadedStrings #-}
 module Main where
 
-import qualified Graphics.UI.GLUT as GL
-
-(|>) :: a -> (a -> b) -> b
-(|>) x f = f x
-
-infixl 0 |>
+import           SDL
+import           Linear                         ( V4(..) )
+import           Control.Monad                  ( unless )
 
 main :: IO ()
 main = do
-  GL.getArgsAndInitialize
-  GL.createWindow "Hello World"
-  GL.displayCallback GL.$= display
-  GL.mainLoop
+  initializeAll
+  window   <- createWindow "My SDL Application" defaultWindow
+  renderer <- createRenderer window (-1) defaultRenderer
+  appLoop renderer
 
-display :: GL.DisplayCallback
-display = do
-  [GL.ColorBuffer] |> GL.clear
-  GL.flush
+appLoop :: Renderer -> IO ()
+appLoop renderer = do
+  events <- pollEvents
+  let eventIsQPress event = case eventPayload event of
+        KeyboardEvent keyboardEvent ->
+          keyboardEventKeyMotion keyboardEvent
+            == Pressed
+            && keysymKeycode (keyboardEventKeysym keyboardEvent)
+            == KeycodeQ
+        _ -> False
+      qPressed = any eventIsQPress events
+  rendererDrawColor renderer $= V4 0 0 255 255
+  clear renderer
+  present renderer
+  unless qPressed (appLoop renderer)

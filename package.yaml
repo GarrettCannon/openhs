@@ -13,7 +13,8 @@ tests:
 copyright: 2019 Author name here
 maintainer: example@example.com
 dependencies:
-- GLUT
+- sdl2
+- linear
 - base >= 4.7 && < 5
 name: openhs
 version: 0.1.0.0
