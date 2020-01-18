@@ -1,7 +1,12 @@
 module Lib
-    ( someFunc
-    )
+  ( windowSize
+  )
 where
 
-someFunc :: IO ()
-someFunc = putStrLn "Hello"
+import qualified SDL
+import qualified Linear
+import qualified Foreign.C.Types               as C
+
+windowSize :: SDL.Window -> IO (Linear.V2 C.CInt)
+windowSize window = SDL.get (SDL.windowSize window)
+
