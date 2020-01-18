@@ -3,7 +3,21 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    cabal-file:
+      size: 1581
+      sha256: 83d5956e7faf3b9a57f671cca89166fd2db4def5ade37df15724a70fcce3a201
+    name: sdl2-gfx
+    version: 1.0.0
+    git: https://github.com/GarrettCannon/sdl2-gfx.git
+    pantry-tree:
+      size: 1039
+      sha256: b36231d2a1843700e0e882f1f18458858ebc534f922df83e1701b9f7077d431f
+    commit: e67e10003d7deb817a4d3d756399c175fb1e92d6
+  original:
+    git: https://github.com/GarrettCannon/sdl2-gfx.git
+    commit: e67e10003d7deb817a4d3d756399c175fb1e92d6
 snapshots:
 - completed:
     size: 524789
