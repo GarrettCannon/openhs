@@ -41,8 +41,8 @@ packages:
 #   commit: e7b331f14bcffb8367cd58fbfc8b40ec7642100a
 #
 extra-deps:
-  - git: https://github.com/GarrettCannon/sdl2-gfx.git
-    commit: e67e10003d7deb817a4d3d756399c175fb1e92d6
+- git: https://github.com/haskell-game/sdl2-gfx.git
+  commit: a57e9cf2468f71c357f260f2264095516ea0d90d
 
 
 # Override default flag values for local packages and extra-deps
@@ -52,7 +52,7 @@ extra-deps:
 # extra-package-dbs: []
 
 # Control whether we use the GHC we find on the path
-# system-ghc: true
+system-ghc: true
 #
 # Require a specific version of stack, using version ranges
 # require-stack-version: -any # Default

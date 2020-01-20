@@ -6,18 +6,18 @@
 packages:
 - completed:
     cabal-file:
-      size: 1581
-      sha256: 83d5956e7faf3b9a57f671cca89166fd2db4def5ade37df15724a70fcce3a201
+      size: 1597
+      sha256: 88984f90c190f83d95eeaed576aadb6b94a7026c9055bfb62671f82cb16ffb49
     name: sdl2-gfx
     version: 1.0.0
-    git: https://github.com/GarrettCannon/sdl2-gfx.git
+    git: https://github.com/haskell-game/sdl2-gfx.git
     pantry-tree:
-      size: 1039
-      sha256: b36231d2a1843700e0e882f1f18458858ebc534f922df83e1701b9f7077d431f
-    commit: e67e10003d7deb817a4d3d756399c175fb1e92d6
+      size: 984
+      sha256: 145a75d9f8b51cde01beed52454d1563ff9ec78307ab67b9a99c259585e55cff
+    commit: a57e9cf2468f71c357f260f2264095516ea0d90d
   original:
-    git: https://github.com/GarrettCannon/sdl2-gfx.git
-    commit: e67e10003d7deb817a4d3d756399c175fb1e92d6
+    git: https://github.com/haskell-game/sdl2-gfx.git
+    commit: a57e9cf2468f71c357f260f2264095516ea0d90d
 snapshots:
 - completed:
     size: 524789
