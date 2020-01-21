@@ -5,22 +5,22 @@
 
 packages:
 - completed:
+    size: 13481
+    url: https://github.com/GarrettCannon/sdl2-gfx/archive/92968afd04dc3d7a6027746dc433c447492c415e.tar.gz
     cabal-file:
-      size: 1597
-      sha256: 88984f90c190f83d95eeaed576aadb6b94a7026c9055bfb62671f82cb16ffb49
+      size: 1581
+      sha256: 83d5956e7faf3b9a57f671cca89166fd2db4def5ade37df15724a70fcce3a201
     name: sdl2-gfx
     version: 1.0.0
-    git: https://github.com/haskell-game/sdl2-gfx.git
+    sha256: 856073e4b3561695a8d541fd85cc068eea357deece1e2eb71a5deb3a86c1bed7
     pantry-tree:
-      size: 984
-      sha256: 145a75d9f8b51cde01beed52454d1563ff9ec78307ab67b9a99c259585e55cff
-    commit: a57e9cf2468f71c357f260f2264095516ea0d90d
+      size: 1039
+      sha256: c36309b1f6f220b6b7f15cb12b10a6e5ce63aad4987d0b8f1b0aef30218408cf
   original:
-    git: https://github.com/haskell-game/sdl2-gfx.git
-    commit: a57e9cf2468f71c357f260f2264095516ea0d90d
+    url: https://github.com/GarrettCannon/sdl2-gfx/archive/92968afd04dc3d7a6027746dc433c447492c415e.tar.gz
 snapshots:
 - completed:
-    size: 524789
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/14/18.yaml
-    sha256: 646be71223e08234131c6989912e6011e01b9767bc447b6d466a35e14360bdf2
-  original: lts-14.18
+    size: 524162
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/14/21.yaml
+    sha256: 9a55dd75853718f2bbbe951872b36a3b7802fcd71796e0f25b8664f24e34c666
+  original: lts-14.21
